@@ -115,7 +115,7 @@ var db = firebase.firestore();
         google.maps.event.addListener(marker, "click", function(){
           var info = new SnazzyInfoWindow({
               marker: marker,
-              content: '<object width="425" height="311"><param name="movie" value="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&fs=1&modestbranding=1&controls=0"></param></object>',
+              content: `<object width="425" height="311"><param name="movie" value="https://www.youtube.com/embed/${mark.ytid}?autoplay=1&fs=1&modestbranding=1&controls=0"></param></object>`,
           });
           info.open(map, marker);
         })
